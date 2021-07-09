@@ -1,14 +1,13 @@
 package scriptDB;
 
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Assert;
 import org.junit.jupiter.api.*;
 import junit.framework.TestCase;
 
 
 class TestColumn extends TestCase{
 	
-	Column c = new Column();
+	Column c;
     
 	//Com tipo, not null e auto increment
 	@Test
@@ -41,5 +40,5 @@ class TestColumn extends TestCase{
 		c = new Column("salario", EType.DOUBLE, false, false);
 		assertEquals("salario DOUBLE", c.generateScript());
 	}
-
+	
 }
