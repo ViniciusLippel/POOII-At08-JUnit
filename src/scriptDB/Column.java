@@ -49,14 +49,20 @@ public class Column {
 	
 	//Methods
 	public String generateScript() {
+		
 		StringBuilder sb = new StringBuilder();
+		
 		if(this.id!=null && this.id!="" && this.type!=null) {
+			
 			sb.append(this.id + " ");
 			sb.append(this.type);
+			
 			if(this.notNull)
 				sb.append(" NOT NULL");
+			
 			if(this.autoIncrement)
 				sb.append(" AUTO_INCREMENT");
+			
 		}
 		
 		return sb.toString();
