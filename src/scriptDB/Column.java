@@ -7,17 +7,13 @@ public class Column {
 	private boolean notNull;
 	private boolean autoIncrement;
 	
-	//Constructors
+	//Constructor
 	public Column(String id, EType type, boolean notNull, boolean autoIncrement) {
 		super();
 		this.id = id;
 		this.type = type;
 		this.notNull = notNull;
 		this.autoIncrement = autoIncrement;
-	}
-	
-	public Column() {
-		
 	}
 	
 	
